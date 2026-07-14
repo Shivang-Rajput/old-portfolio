@@ -1,30 +1,30 @@
 const projects = [
   {
     title: 'Shopping Portal',
-    imageSrc: '/project-shopping.svg',
-    demoUrl: '#',
-    repoUrl: '#',
+    imageSrc: `${import.meta.env.BASE_URL}E-Shop.png`,
+    demoUrl: 'https://shivang-rajput.github.io/E-Shop/',
+    repoUrl: 'https://github.com/Shivang-Rajput/E-Shop',
   },
   {
-    title: 'Task Manager',
-    imageSrc: '/project-task.svg',
-    demoUrl: '#',
-    repoUrl: '#',
+    title: 'Resume Builder',
+    imageSrc: `${import.meta.env.BASE_URL}Resume_Builder.png`,
+    demoUrl: 'https://shivang-rajput.github.io/Resume_Builder/',
+    repoUrl: 'https://github.com/Shivang-Rajput/Resume_Builder',
   },
 ];
 
 const skills = [
   {
     title: 'Frontend',
-    items: ['React.js', 'JavaScript/ES6+', 'HTML5', 'CSS3', 'Bootstrap'],
+    items: ['React.js', 'JavaScript/ES6+', 'JAVA', 'PYTHON', 'SQL'],
   },
   {
     title: 'Core CS',
-    items: ['Data Structures', 'Algorithms - DFS/BFS', 'Sorting'],
+    items: ['Data Structures', 'OOPs', 'Networking'],
   },
   {
     title: 'DevOps / Tools',
-    items: ['Git', 'Docker'],
+    items: ['Git', 'Docker', 'Kubernetes'],
   },
   {
     title: 'AI / Cloud',
@@ -57,7 +57,7 @@ function App() {
         <div className="hero-content hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">React.js Developer • OCI 2025 AI Foundations</p>
-            <h1>Hi, I’m Sanga.</h1>
+            <h1>Hi, I’m Shivang.</h1>
             <p className="hero-text">
               I build scalable, user-centered web applications with a focus on clean architecture,
               thoughtful UX, and practical problem solving.
@@ -72,7 +72,7 @@ function App() {
             </div>
           </div>
           <div className="photo-card">
-            <img src="/profile-photo.jpeg" alt="Profile illustration for Sanga" />
+            <img src={`${import.meta.env.BASE_URL}profile-photo.jpeg`} alt="Profile illustration for Sanga" />
           </div>
         </div>
       </header>
@@ -127,12 +127,12 @@ function App() {
           <p className="section-tag">Resume</p>
           <div className="resume-card">
             <iframe
-              src="/resume.pdf"
+              src={`${import.meta.env.BASE_URL}resume.pdf`}
               title="Resume PDF"
               className="resume-frame"
             />
             <div className="resume-actions">
-              <a href="/resume.pdf" download className="button primary">
+              <a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="button primary">
                 Download Resume PDF
               </a>
             </div>
@@ -172,10 +172,10 @@ function App() {
             </article>
           </div>
           <div className="contact-actions">
-            <a href="mailto:sanga@example.com" className="button primary">
+            <a href="mailto:singhshivang663@gmail.com" className="button primary">
               Email Me
             </a>
-            <a href="https://www.linkedin.com" className="button secondary">
+            <a href="https://www.linkedin.com/in/-shivang-singh?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="button secondary">
               LinkedIn
             </a>
           </div>
